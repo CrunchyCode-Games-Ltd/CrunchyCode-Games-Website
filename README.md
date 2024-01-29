@@ -1,2 +1,3 @@
-# CrunchyCode-Games-Website
-CCG Website Code
+# CrunchyCode Website
+
+CrunchyCode website
