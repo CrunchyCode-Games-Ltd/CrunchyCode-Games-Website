@@ -32,20 +32,26 @@ import "@fontsource/poppins/400.css";
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.crunchycodegames.com" />
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.svg" />
+    <link rel="icon" href="/img/favicon.svg" />
     <title>CrunchyCode Games - Independent Game Studio</title>
   </head>
   <body>
     <main class="flex min-h-screen w-screen flex-col gap-32 items-center bg-neutral-100">
       <nav
-        class="bg-rose-600 sticky top-0 w-screen px-5 py-5 text-white shadow-xl"
+        class="bg-rose-600 sticky top-0 w-screen px-5 py-5 text-white lg:shadow-xl"
       >
-        <div class="flex flex-col lg:flex-row gap-6 justify-between container lg:px-20 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row gap-6 justify-between container lg:px-20 mx-auto"
+        >
           <div class="flex gap-4 justify-center">
             <img class="h-14 lg:h-8" src="img/logo.svg" />
-            <h1 class="text-center text-6xl lg:text-2xl font-medium">CrunchyCode Games</h1>
+            <h1 class="text-center text-6xl lg:text-2xl font-medium">
+              CrunchyCode Games
+            </h1>
           </div>
-          <ul class="flex items-end justify-center gap-5 font-medium text-4xl lg:text-xl">
+          <ul
+            class="flex items-end justify-center gap-5 font-medium text-4xl lg:text-xl"
+          >
             <li>
               <a
                 href="/"
@@ -62,19 +68,48 @@ import "@fontsource/poppins/400.css";
             </li>
             <li>
               <a
-              href="/pd/"
-              class="transition-opacity duration-200 ease-in-out hover:opacity-80"
-              >PolyDestroyer</a
+                href="/pd/"
+                class="transition-opacity duration-200 ease-in-out hover:opacity-80"
+                >PolyDestroyer</a
               >
+            </li>
+            <li>
+              <a class="hidden lg:block" href="/hosting/">
+                <span
+                  class="px-3 py-2 rounded-full bg-indigo-600 hover:bg-indigo-400 transition-colors ease-in-out drop-shadow-lg"
+                >
+                  View our <b>new</b> Web Hosting!
+                </span>
+              </a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <iframe class="min-h-screen w-screen" src="terms_iframe.html"></iframe>
+      <section class="sticky top-[205px] lg:hidden bg-indigo-600 w-screen h-28 -mt-32 flex justify-center items-center text-white text-5xl">
+        <a href="/hosting/">
+            View our <b>new</b> Web Hosting!
+        </a>
+      </section>
 
-      <footer class="text-center text-4xl lg:text-base w-screen text-white bg-rose-600 p-5">
-        <p>&copy; 2023 - 2024 CrunchyCode Games Ltd. - All rights reserved. Company No. - 15211638</p>
+      <iframe class="min-h-screen w-screen" src="/terms_iframe"></iframe>
+
+      <footer
+        class="text-center text-4xl lg:text-base w-screen text-white bg-rose-600 p-5"
+      >
+        <p class="mb-2">
+          <a
+            class="text-white hover:text-gray-300 underline transition-colors duration-200 ease-in-out"
+            href="terms">Terms and conditions</a
+          ><a
+            class="text-white hover:text-gray-300 underline transition-colors duration-200 ease-in-out"
+            href="privacy">Privacy Policy</a
+          >
+        </p>
+        <p>
+          &copy; 2023 - 2024 CrunchyCode Games Ltd. - All rights reserved.
+          Company No. - 15211638.
+        </p>
       </footer>
     </main>
   </body>
