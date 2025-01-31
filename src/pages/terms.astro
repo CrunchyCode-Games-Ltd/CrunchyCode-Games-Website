@@ -34,9 +34,18 @@ import "@fontsource/poppins/400.css";
     <!-- Favicon -->
     <link rel="icon" href="/img/favicon.svg" />
     <title>CrunchyCode Games - Terms and Conditions</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const copyright = document.getElementById('copyright');
+        if (copyright) {
+          copyright.textContent = new Date().getFullYear().toString();
+        }
+        
+      });
+    </script>
   </head>
   <body>
-    <main class="flex min-h-screen w-screen flex-col gap-32 items-center bg-neutral-100">
+    <main class="flex min-h-screen w-screen flex-col gap-16 items-center bg-neutral-100">
       <nav
         class="bg-rose-600 sticky top-0 w-screen px-5 py-5 text-white lg:shadow-xl"
       >
@@ -69,7 +78,7 @@ import "@fontsource/poppins/400.css";
             <li>
               <a
                 href="/pd/"
-                class="transition-opacity duration-200 ease-in-out hover:opacity-80"
+                class="transition-opacity duration-200 ease-in-out hover:opacitys-80"
                 >PolyDestroyer</a
               >
             </li>
@@ -92,7 +101,7 @@ import "@fontsource/poppins/400.css";
         </a>
       </section>
 
-      <iframe class="min-h-screen w-screen" src="/terms_iframe"></iframe>
+      <iframe class="min-h-screen w-screen ml-4 mr-4 pl-4 pr-4" src="/terms_iframe"></iframe>
 
       <footer
         class="text-center text-4xl lg:text-base w-screen text-white bg-rose-600 p-5"
@@ -107,7 +116,7 @@ import "@fontsource/poppins/400.css";
           >.
         </p>
         <p>
-          &copy; 2023 - 2024 CrunchyCode Games Ltd. - All rights reserved.
+          &copy; 2023 - <span id="copyright"></span> CrunchyCode Games Ltd. - All rights reserved.
           Company No. - 15211638.
         </p>
       </footer>

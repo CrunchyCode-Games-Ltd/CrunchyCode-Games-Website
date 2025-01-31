@@ -1,7 +1,3 @@
----
-import "@fontsource/poppins/500.css";
-import "@fontsource/poppins/400.css";
----
 
 <!-- Hello Gamers! --><!doctype html>
 <html lang="en">
@@ -33,20 +29,13 @@ import "@fontsource/poppins/400.css";
     <!-- Favicon -->
     <link rel="icon" href="/img/favicon.svg" />
     <title>CrunchyCode Games - Independent Game Studio</title>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const copyright = document.getElementById('copyright');
-        if (copyright) {
-          copyright.textContent = new Date().getFullYear().toString();
-        }
-        
-      });
-    </script>
   </head>
   <body>
-    <main class="flex min-h-screen flex-col items-center bg-neutral-100 overflow-x-hidden">
+    <main
+      class="flex min-h-screen min-w-screen flex-col gap-32 items-center bg-neutral-100"
+    >
       <nav
-        class="bg-rose-600 sticky top-0 w-screen px-5 py-5 mb-16 text-white lg:shadow-xl"
+        class="bg-rose-600 sticky top-0 w-screen px-5 py-5 text-white lg:shadow-xl"
       >
         <div
           class="flex flex-col lg:flex-row gap-6 justify-between container lg:px-20 mx-auto"
@@ -69,19 +58,18 @@ import "@fontsource/poppins/400.css";
             </li>
             <li>
               <a
-                href="/pd/"
-                class="transition-opacity duration-200 ease-in-out hover:opacity-80"
-                >PolyDestroyer</a
-              >
-            </li>
-            <li>
-              <a
                 href="/tqotth/"
                 class="transition-opacity duration-200 ease-in-out hover:opacity-80"
                 >The Quest of the Tiny Hero</a
               >
             </li>
-            
+            <li>
+              <a
+                href="/pd/"
+                class="transition-opacity duration-200 ease-in-out hover:opacity-80"
+                >PolyDestroyer</a
+              >
+            </li>
             <li>
               <a class="hidden lg:block" href="/hosting/">
                 <span
@@ -95,7 +83,7 @@ import "@fontsource/poppins/400.css";
         </div>
       </nav>
 
-      <section class="sticky top-[205px] lg:hidden bg-indigo-600 w-screen h-28 -mt-28 flex justify-center items-center text-white text-5xl">
+      <section class="sticky top-[205px] lg:hidden bg-indigo-600 w-screen h-28 -mt-32 flex justify-center items-center text-white text-5xl">
         <a href="/hosting/">
             View our <b>new</b> Web Hosting!
         </a>
@@ -122,16 +110,17 @@ import "@fontsource/poppins/400.css";
             class="text-6xl lg:text-5xl font-medium leading-tight"
           >
             Discover <span class="text-rose-600 leading-tight"
-              >"PolyDestroyer"</span
+              >"The Quest of the Tiny Hero."</span
             >
           </h2>
           <p class="lg:w-3/4 text-5xl lg:text-2xl">
-            Our first game is "PolyDestroyer", a 2D top-down space shooter.
+            Our first game is "The Quest of the Tiny Hero", a 2D top-down RPG
+            game with turn based combat.
           </p>
-          <a class="lg:w-3/4" href="/pd/"
+          <a class="lg:w-3/4" href="/tqotth/"
             ><img
               class="mt-4 shadow-solid hover:shadow-solid-lg transition-shadow ease-in-out"
-              src="/img/pd4.jpg"
+              src="/img/tqotth1.png"
             /></a
           >
         </div>
@@ -143,35 +132,39 @@ import "@fontsource/poppins/400.css";
             Meet the <span class="text-rose-600">dev team.</span>
           </h2>
           <div class="flex flex-col items-center gap-28 lg:gap-12">
-            <div
+            <a
+              href="#"
               class="flex flex-col gap-2 w-full lg:w-96 lg:h-2/3 bg-white p-4 border-8 lg:border-4 border-rose-600 shadow-solid hover:shadow-solid-lg transition-shadow ease-in-out"
             >
               <h3 class="text-5xl lg:text-2xl font-medium">Adrian Kilgour</h3>
               <p class="text-4xl lg:text-lg">Lead Developer</p>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="flex flex-col gap-2 w-full lg:w-96 lg:h-2/3 bg-white p-4 border-8 lg:border-4 border-rose-600 shadow-solid hover:shadow-solid-lg transition-shadow ease-in-out"
             >
               <h3 class="text-5xl lg:text-2xl font-medium">Lewis Brook</h3>
               <p class="text-4xl lg:text-lg">Lead QA</p>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="flex flex-col gap-2 w-full lg:w-96 lg:h-2/3 bg-white p-4 border-8 lg:border-4 border-rose-600 shadow-solid hover:shadow-solid-lg transition-shadow ease-in-out"
             >
               <h3 class="text-5xl lg:text-2xl font-medium">Dylan Hobby</h3>
               <p class="text-4xl lg:text-lg">Lead Web Developer</p>
-            </div>
-            <div
+            </a>
+            <a
+              href="#"
               class="flex flex-col gap-2 w-full lg:w-96 lg:h-2/3 bg-white p-4 border-8 lg:border-4 border-rose-600 shadow-solid hover:shadow-solid-lg transition-shadow ease-in-out"
             >
               <h3 class="text-5xl lg:text-2xl font-medium">Stella Kennedy</h3>
               <p class="text-4xl lg:text-lg">World Designer</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="w-3/4 text-center gap-10 lg:gap-5 mb-20 flex flex-col">
+      <section class="w-3/4 text-center gap-10 lg:gap-5 flex flex-col">
         <h2 class="text-6xl lg:text-5xl font-medium">Contact us.</h2>
         <p class="text-5xl lg:text-3xl">hello@crunchycodegames.com</p>
         <p
@@ -196,7 +189,7 @@ import "@fontsource/poppins/400.css";
           >.
         </p>
         <p>
-          &copy; 2023 - <span id="copyright"></span> CrunchyCode Games Ltd. - All rights reserved.
+          &copy; 2023 - 2024 CrunchyCode Games Ltd. - All rights reserved.
           Company No. - 15211638.
         </p>
       </footer>
